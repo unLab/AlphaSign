@@ -9,7 +9,7 @@ bind pub o !sign pub_sign
 
 proc pub_sign {nick uhost hand chan arg} {
   putserv "NOTICE $nick :Displayed your message on sign #1!"
-  exec -- ~/signage.pl $nick:$arg
+  exec -- ~/alphasign.pl $nick:$arg
 }
 
 putlog "** AlphaSign.tcl by TeknoJuce & DGNP : loaded"
